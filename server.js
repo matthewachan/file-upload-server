@@ -58,7 +58,7 @@ app.post("/upload", function(request, response) {
 	}
 })
 
-// Go to localhost:8888 to view the website
-app.listen(8888, function() {
-	console.log("Server started.")
+// Go to localhost:5000 to view the website
+app.listen(5000, function() {
+	console.log("Server started. Visit http://localhost:5000")
 })
