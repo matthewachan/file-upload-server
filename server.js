@@ -28,6 +28,8 @@ app.use(multer({
 // Set Express JS view engine
 app.set("views", __dirname + "/public")
 app.set("view engine", "ejs")
+// Set the default port
+app.set("port", (process.env.PORT || 5000))
 
 // Set up Express JS static file directory
 app.use(express.static(__dirname + "/public"))
@@ -59,6 +61,6 @@ app.post("/upload", function(request, response) {
 })
 
 // Go to localhost:5000 to view the website
-app.listen(5000, function() {
-	console.log("Server started. Visit http://localhost:5000")
+app.listen(app.get('port'), function() {
+	console.log("Server started on port ", app.get("port"))
 })
