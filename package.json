@@ -21,15 +21,13 @@
   "author": "Matthew Chan",
   "license": "ISC",
   "dependencies" : {
-    "express" : "4.12.4"
-    "multer" : "0.1.8"
+    "express" : "4.12.4",
+    "multer" : "0.1.8",
     "ejs" : "2.3.1"
-    "path" : "0.11.14"
-    "fs" : "0.0.2"
-  }
+  },
   "engines" : {
     "node" : "0.12.x"
-  }
+  },
   "bugs" : {
     "url": "https://github.com/matthewachan/file-upload-server/issues"
   },
